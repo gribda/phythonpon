@@ -26,7 +26,7 @@ class human:
 
     def chill(self):
         print("Відпочиваємо")
-        enjoymnet = random.randint(3, 8)
+        enjoymnet = random.randint(6, 8)
         print(f"Ви відпочили і почуваєтесь на всі {enjoyment} процентів!")
 
     def shopping(self):
@@ -83,7 +83,7 @@ class Car:
     def passengers_info(self):
         print(f"Авто {self.marka}, ", end='')
         if self.passengers != []:
-            print(f"Авто {self.marka}, зараз в в салоні:")
+            print(f"Авто {self.marka}, зараз в в гараже:")
             for p in self.passengers:
                 print(p.name)
         else:
@@ -97,7 +97,7 @@ class Home:
         self.food = 0
         self.cleanliness_level = 50
 
-human1 = human("Serq", car=Car("BMW X9"), home=Home())
+human1 = human("Serq", car=Car("Mercedes-Benz GLA-Class"), home=Home())
 day = 1
 while(human.is_alive()):
     human.life()
@@ -105,6 +105,6 @@ while(human.is_alive()):
     print(f"День {day}")
     day += 1
 
-'''car = Car("BMW X9")
+'''car = Car("Mercedes-Benz GLA-Class")
 car.add_passengers(human1, human2, human3)
 car.passengers_info()'''
