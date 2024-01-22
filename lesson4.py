@@ -3,11 +3,11 @@ class Human:
     _pole = 100
     group = "?????"
     def set_height(self, height):
-        if height > 240
+        if height > 210:
             return
         self.__height = height
     def __method(self, height):
-        if height > 240:
+        if height > 210:
             return
         self.__height = height
     def get_height(self):
@@ -18,25 +18,25 @@ class Human:
         (print"Method")
 
 class Student(Human):
-    group = "1016"
+    group = "7831"
     def __init__(self, height):
         self.height = height
 
 
-class Worker(Human):
+class Teacher(Human):
 
 
 
 
 h = Human()
 print(h.get_height())
-h.set_height(1000000)
+h.set_height(10000000000000000)
 print(h.get_height())
 
 stud = Student()
 print(stud.height)
 print(stud.group)
 
-w = Worker()
-print(w.height)
-print(w.group)
+t = teacher()
+print(t.height)
+print(t.group)
